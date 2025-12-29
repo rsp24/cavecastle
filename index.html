@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cave Castle | Luxury Homestay in Nature</title>
+    <meta name="description"
+        content="Experience the serenity of nature at Cave Castle, a luxury homestay nestled in the forest.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Cave Castle</a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#booking" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner / Hero Section -->
+    <section id="banner" class="parallax">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('images/banner1.png');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Escape to the Unknown</h1>
+                    <p>Experience luxury in the heart of the forest</p>
+                    <a href="#booking" class="btn-cta">Book Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/banner2.png');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Cozy Cave Interiors</h1>
+                    <p>Rustic charm meets modern comfort</p>
+                    <a href="#gallery" class="btn-cta">View Gallery</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/attraction1.png');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Nature at Your Doorstep</h1>
+                    <p>Discover hidden waterfalls and trails</p>
+                    <a href="#attractions" class="btn-cta">Explore Nearby</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="prev-slide">&#10094;</button>
+            <button id="next-slide">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Cave Castle</h2>
+                <p>Welcome to <strong>Cave Castle</strong>, a unique homestay experience where nature's raw beauty meets
+                    luxurious comfort. Unlike any other getaway, our property is designed to blend seamlessly with the
+                    surrounding forest and cave structures.</p>
+                <p>Wake up to the sound of birds, breathe in the fresh forest air, and relax in rooms that feel like a
+                    part of the earth itself.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/banner2.png" alt="Cozy Cave interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <p>A glimpse into the serenity.</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Using repeated images since we hit generation limit, but structured for grid -->
+                <div class="gallery-item"><img src="images/banner1.png" alt="Exterior View"></div>
+                <div class="gallery-item"><img src="images/banner2.png" alt="Interior Details"></div>
+                <div class="gallery-item"><img src="images/attraction1.png" alt="Waterfall nearby"></div>
+                <div class="gallery-item"><img src="images/banner1.png" alt="Forest View"></div>
+                <div class="gallery-item"><img src="images/banner2.png" alt="Cozy corners"></div>
+                <div class="gallery-item"><img src="images/attraction1.png" alt="Nature trails"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Attractions -->
+    <section id="attractions" class="section-padding parallax" style="background-image: url('images/banner1.png');">
+        <div class="overlay-light"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nearby Attractions</h2>
+                <p>Explore the wonders around Cave Castle.</p>
+            </div>
+            <div class="attractions-grid">
+                <div class="card">
+                    <img src="images/attraction1.png" alt="Hidden Waterfall">
+                    <div class="card-content">
+                        <h3>Hidden Waterfall</h3>
+                        <p>A majestic waterfall just a 20-minute trek from the property. Perfect for a morning dip.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/banner1.png" alt="Forest Trails">
+                    <div class="card-content">
+                        <h3>Ancient Forest Trails</h3>
+                        <p>Walk through centuries-old trees and discover the diverse flora and fauna of the region.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/banner2.png" alt="Cave Exploration">
+                    <div class="card-content">
+                        <h3>Cave Exploration</h3>
+                        <p>Guided tours into the deeper caves for the adventurous souls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Location</h2>
+                <p>Find your way to paradise.</p>
+            </div>
+            <div class="map-container">
+                <!-- Google Maps Placeholder -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3899.579244873877!2d75.26092517506368!3d12.209007288040656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDEyJzMyLjQiTiA3NcKwMTUnNDguNiJF!5e0!3m2!1sen!2sin!4v1766992166208!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Query Form -->
+    <section id="booking" class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plan Your Stay</h2>
+                <p>Send us your requirements and we'll get back to you.</p>
+            </div>
+            <div class="booking-form-container">
+                <form action="#" method="POST" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Your Contact Number">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">From Date</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">To Date</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of People</label>
+                        <input type="number" id="guests" name="guests" min="1" required placeholder="Number of Guests">
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Additional Requirements</label>
+                        <textarea id="requirements" name="requirements" rows="4"
+                            placeholder="Tell us about any specific needs..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-cta">Send Inquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us & Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: stay@cavecastle.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: Forest Edge Road, Green Valley, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Instagram | Facebook | Twitter</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cave Castle Homestay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
