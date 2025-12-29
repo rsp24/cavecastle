@@ -170,7 +170,7 @@
                 <p>Send us your requirements and we'll get back to you.</p>
             </div>
             <div class="booking-form-container">
-                <form action="#" method="POST" class="booking-form">
+                <form id="booking-form" action="#" method="POST" class="booking-form">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -229,11 +229,47 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Cave Castle Homestay. All rights reserved.</p>
+            <p>&copy; 2026 Cave Castle Homestay. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("RFNq-JYVeX9F_NIi4");
+        })();
+        document.getElementById("booking-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const btn = this.querySelector("button[type='submit']");
+            btn.disabled = true;
+            btn.textContent = "Sending...";
+
+            const data = {
+                name: document.getElementById("name").value,
+                phone: document.getElementById("phone").value,
+                checkin: document.getElementById("checkin").value,
+                checkout: document.getElementById("checkout").value,
+                guests: document.getElementById("guests").value,
+                requirements: document.getElementById("requirements").value || "Not specified"
+            };
+
+            emailjs.send("service_kgemsuk", "template_5vl27bd", data)
+                .then(() => {
+                    alert("Your inquiry has been sent successfully! We will contact you soon.");
+                    btn.disabled = false;
+                    btn.textContent = "Send Inquiry";
+                    document.getElementById("booking-form").reset();
+                })
+                .catch((error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("Oops! Something went wrong. Please try again.");
+                    btn.disabled = false;
+                    btn.textContent = "Send Inquiry";
+                });
+        });
+    </script>
 </body>
 
 </html>
