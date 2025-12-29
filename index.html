@@ -257,16 +257,16 @@
 
             emailjs.send("service_kgemsuk", "template_5vl27bd", data)
                 .then(() => {
-                    alert("Your inquiry has been sent successfully! We will contact you soon.");
+                    alert("Enquiry sent successfully!");
+                    e.target.reset();
                     btn.disabled = false;
-                    btn.textContent = "Send Inquiry";
-                    document.getElementById("booking-form").reset();
+                    btn.textContent = "Send Enquiry";
                 })
-                .catch((error) => {
-                    console.error("EmailJS Error:", error);
-                    alert("Oops! Something went wrong. Please try again.");
+                .catch((err) => {
+                    console.error(err);
+                    alert("Something went wrong. Please try again.");
                     btn.disabled = false;
-                    btn.textContent = "Send Inquiry";
+                    btn.textContent = "Send Enquiry";
                 });
         });
     </script>
